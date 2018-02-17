@@ -1,4 +1,5 @@
-REBAR := rebar
+PROJDIR := $(realpath $(CURDIR))
+REBAR ?= $(PROJDIR)/rebar
 
 .PHONY: all deps doc test clean update release
 
